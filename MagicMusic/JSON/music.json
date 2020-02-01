@@ -1,0 +1,380 @@
+[
+  {
+    "song": "Red",
+    "singer": "Taylor Swift",
+    "image": "Red",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Tim McGraw",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "The Outside",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Should've Said No ",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Teardrops on My Guitar ",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Picture to Burn",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "A Place In This World",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Tied Together With A Smile",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "A Perfectly Good Heart",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Cold As You",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Our Song ",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "I'm Only Me When I'm With You",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Stay Beautiful",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Teardrops On My Guitar ",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Invisible",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Taylor Swift's 1st Phone Call With Tim McGraw ",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Mary's Song ",
+    "singer": "Taylor Swift",
+    "image": "Taylor Swift",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Speak Now",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Mean",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Never Grow Up",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "The Story Of Us",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Back To December",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Innocent",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Last Kiss",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Sparks Fly",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Long Live",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Enchanted",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Haunted",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Dear John",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Better Than Revenge",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Mine",
+    "singer": "Taylor Swift",
+    "image": "Speak Now",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Our Song ",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Should've Said No ",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Untouchable",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Hey Stephen",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Forever & Always",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "SuperStar",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Jump Then Fall",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Breathe",
+    "singer": "Taylor Swift _ Colbie Caillat",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "You Belong With Me",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Tell Me Why",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Fifteen",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Teardrops On My Guitar ",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "White Horse",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "The Other Side of the Door",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "The Way I Loved You",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Love Story ",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Fearless",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Come In With the Rain",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "You're Not Sorry",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Change",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "The Best Day",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Love Story",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  },
+  {
+    "song": "Forever & Always ",
+    "singer": "Taylor Swift",
+    "image": "Fearless",
+    "date": "2020-01-01T00:00:00.000Z",
+    "style": "pop"
+  }
+]
