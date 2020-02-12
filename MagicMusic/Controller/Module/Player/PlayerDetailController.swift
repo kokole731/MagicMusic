@@ -4,33 +4,40 @@
 //
 //  Created by Chandler on 2020/1/30.
 //  Copyright © 2020 Chandler. All rights reserved.
-//
-
+//  播放音乐详情界面
+//  TODO： 加上用户状态信息
 import UIKit
 
 class PlayerDetailController: UITableViewController {
-
+    
+    //用于显示收藏时间
+    let formatter = DateFormatter()
+    
+    var currentMusic: Music?
+    @IBOutlet weak var songText: UILabel!
+    @IBOutlet weak var singerText: UILabel!
+    @IBOutlet weak var styleText: UILabel!
+    @IBOutlet weak var timeText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initMusic()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    func initMusic(){
+        songText.text = currentMusic!.title
+        singerText.text = currentMusic!.artist
+        styleText.text = currentMusic!.style
+        formatter.dateFormat = "yyyy-MM-dd HH:mm"
+        timeText.text = formatter.string(from: currentMusic!.collectDate)
+    }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

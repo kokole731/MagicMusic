@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PersonalStyleController: UITableViewController {
 
-
-//    let styleList: [MusicStyle] = []
+    //修改Style（根据Style数据库来做）
+    let realm = try! Realm()
+    
+    var styleDict: [String: Int] = [:]
+    var styleList: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //初始化歌曲风格字典
+        for style in MusicStyle.allValues{
+            styleList.append(style)
+            //筛选出当前风格的歌曲数目
+            styleDict[style] = realm.objects(Music.self).filter("collect == %@", true).filter("style == %@", style).count
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -32,18 +41,21 @@ class PersonalStyleController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return styleDict.count
     }
 
-    /*
+    //MARK:音乐风格展示
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "styleCell", for: indexPath) as! StyleCellTableViewCell
+        let currentStyle = styleList[indexPath.row]
+        cell.styleText.text = currentStyle
+        cell.styleCount.text = "\(styleDict[currentStyle]!)"
+        
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
