@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.9.1)
+  - MBProgressHUD (1.2.0)
+  - ProgressHUD (2.51)
+  - Realm (4.3.2):
+    - Realm/Headers (= 4.3.2)
+  - Realm/Headers (4.3.2)
+  - RealmSwift (4.3.2):
+    - Realm (= 4.3.2)
+  - StreamingKit (0.1.30)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MBProgressHUD
+  - ProgressHUD
+  - RealmSwift
+  - StreamingKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MBProgressHUD
+    - ProgressHUD
+    - Realm
+    - RealmSwift
+    - StreamingKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
+  Realm: 5e92902e2875dff4bb0fd02f67bb737c3d5db2bc
+  RealmSwift: 9a360fc7bae04fc2e308a34fbd899d5faa2d6b22
+  StreamingKit: 70ca8608c206864b4d54a577eacb3c8bf7c72209
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 408770f03c09f42fe35c6760d78d4a934acc1eb3
+
+COCOAPODS: 1.5.2

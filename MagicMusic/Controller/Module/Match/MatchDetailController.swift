@@ -7,40 +7,109 @@
 //
 
 import UIKit
+import RealmSwift
+import ProgressHUD
+
 
 class MatchDetailController: UITableViewController {
 
+    let realm = try! Realm()
+    
+    @IBOutlet weak var collectBtnOutlet: UIButton!
+    //MARK:歌曲信息
+    var matchedMusic:Music?
+    @IBOutlet weak var songNameText: UILabel!
+    @IBOutlet weak var singerText: UILabel!
+    @IBOutlet weak var styleText: UILabel!
+    @IBOutlet weak var albumImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //格式初始化
+        formatInit()
+        infoInit()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    //MARK: 信息初始化
+    func formatInit() {
+        self.tableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine;
+//        self.tableView.separatorColor = UIColor.clear;
+        songNameText.lineBreakMode = NSLineBreakMode.byWordWrapping
+        songNameText.numberOfLines = 0
+        
+        collectBtnOutlet.layer.cornerRadius = 10
+    }
+    
+    func infoInit() {
+        if let music = matchedMusic{
+            songNameText.text = music.title
+            singerText.text = music.artist
+            styleText.text = music.style
+//            albumImage.image = UIImage(named: music.imageUrl)
+            print(music.imageUrl)
+            albumImage.downloadedFrom(link: music.imageUrl)
+        }else{
+            songNameText.text = "未知"
+            singerText.text = "未知"
+            styleText.text = "未知"
+            albumImage.image = UIImage(named: "1024")
+        }
+        
+    }
+    
+    //添加个人收藏
+    @IBAction func addBtn(_ sender: UIButton) {
+        if let matchedMusic = matchedMusic{
+            let songName = matchedMusic.title
+            if realm.objects(Music.self).filter("title = %@ and collect == %@", songName, true).first != nil{
+                print("该歌曲已经收藏")
+                ProgressHUD.showError("该歌曲已经收藏")
+            }else{
+                addFavorate(music: matchedMusic)
+                ProgressHUD.showSuccess("收藏成功")
+                //不用委托了
+//                MatchDelegate.addMusicItem(music: matchedMusic)
+                print("收藏成功")
+            }
+        }else{
+            print("曲库中无该歌曲")
+            ProgressHUD.showError("曲库中无该歌曲")
+        }
+//        navigationController?.popViewController(animated: true)
+    }
+        
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    @IBAction func confirmBtn(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    //添加至本地歌单
+    func addFavorate(music: Music){
+        do {
+            try realm.write {
+                realm.objects(Music.self).filter("title = %@", music.title).first?.collect = true
+            }
+        } catch  {
+            print(error)
+        }
+        
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+//
+//        // Configure the cell...
+//
+//        return cell
+//    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -88,3 +157,4 @@ class MatchDetailController: UITableViewController {
     */
 
 }
+
